@@ -1,38 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap');
+/* 
+  #3a5157 
+  #ff145b
+*/
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #1b2122;
   color: white;
+  font-family: 'Barlow', sans-serif;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.header-component {
+  border-top: 8px solid #ff145b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-red {
+  color: #ff145b;
+}
+
+.bg-red {
+  background-color: #ff145b;
+}
+
+.movie-card {
+  max-width: 280px;
+  width: 100%;
+  transition: 200ms;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.card-rating {
+  position: absolute;
+  left: 50%;
+  top: -5%;
+  transform: translate(-50%, 0);
+  background-color: #ff145b;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.movie-detail-image {
+  max-width: 400px;
+}
+
+.movie-detail-backdrop {
+  background: linear-gradient(
+    0deg,
+    rgba(40, 49, 54, 1) 0%,
+    rgba(40, 49, 54, 0.4906337535014006) 100%
+  );
 }
